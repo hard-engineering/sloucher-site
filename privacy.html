@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sloucher — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Sloucher, a macOS menu-bar posture coach. Camera frames are processed on-device and never uploaded." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy: #1d2b4f;
+    --navy-soft: #2c3e6b;
+    --cream: #f6f1e4;
+    --cream-card: #fffdf7;
+    --line: #e3dcc8;
+    --muted: #5b6479;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--navy);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px 96px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 28px; margin-bottom: 36px; }
+  .brand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--navy-soft);
+  }
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.2;
+    margin: 16px 0 8px;
+  }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 40px 0 10px;
+  }
+  p { margin: 0 0 16px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--navy); }
+  .callout {
+    background: var(--cream-card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 28px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  a { color: var(--navy-soft); }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Sloucher</div>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: June 8, 2026</p>
+    </header>
+
+    <p>Sloucher is a macOS menu-bar posture coach. It uses your Mac's camera to measure your posture on-device and nudge you when you start to slump. This policy explains exactly what Sloucher does and does not do with your information.</p>
+
+    <div class="callout">
+      <p><strong>The short version:</strong> Sloucher processes camera frames locally on your Mac with Apple's Vision framework. It does not upload, collect, sell, or track your camera frames, posture measurements, settings, or any other data.</p>
+    </div>
+
+    <h2>Camera</h2>
+    <p>Sloucher uses the camera only to measure posture on your Mac. Camera frames are analyzed locally with Apple's Vision framework to estimate head and shoulder position relative to your calibration baseline. Camera frames are not uploaded, transmitted, or shared. Release builds of Sloucher do not write camera frame images or raw camera planes to disk.</p>
+
+    <h2>Information stored on your device</h2>
+    <p>Sloucher stores a small amount of settings data locally on your Mac (in macOS <code>UserDefaults</code>), including:</p>
+    <ul>
+      <li>Calibration values from your upright baseline</li>
+      <li>Nudge preferences (such as sound and screen-glow settings)</li>
+      <li>Launch-at-login preference</li>
+      <li>Runtime diagnostic values used for local troubleshooting</li>
+    </ul>
+    <p>This information stays on your Mac. It is not sent to us or to any third party.</p>
+
+    <h2>Information we collect</h2>
+    <p>None. Sloucher does not collect personal data, does not include analytics or advertising SDKs, and does not track you across apps or websites. The bundled Apple privacy manifest declares no collected data types and no tracking.</p>
+
+    <h2>Third parties</h2>
+    <p>Sloucher does not share data with third parties because it does not collect or transmit your data. The app runs entirely on your device.</p>
+
+    <h2>Children's privacy</h2>
+    <p>Sloucher is a general-audience utility and does not knowingly collect any information from anyone, including children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted at this URL with a revised "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or Sloucher's privacy practices can be sent to <a href="mailto:nitin.sngwn@gmail.com">nitin.sngwn@gmail.com</a>.</p>
+
+    <footer>
+      © 2026 Sloucher. This policy applies to the Sloucher macOS app.
+    </footer>
+  </div>
+</body>
+</html>
