@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>sshhh - Push-to-talk dictation for macOS</title>
+<meta name="description" content="sshhh is a macOS menu-bar dictation app. Hold Option, speak, release - your words are transcribed on-device and pasted into any app. Private, no account." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy: #1d2b4f;
+    --navy-soft: #2c3e6b;
+    --cream: #f6f1e4;
+    --cream-card: #fffdf7;
+    --line: #e3dcc8;
+    --muted: #5b6479;
+    --green: #2f9e74;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--navy);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 72px 24px 96px; }
+  .brand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--navy-soft);
+  }
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.18;
+    margin: 18px 0 12px;
+  }
+  .lede { font-size: 19px; color: var(--muted); margin: 0 0 28px; max-width: 60ch; }
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 44px 0 12px;
+  }
+  p { margin: 0 0 16px; }
+  ol, ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--navy); }
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 8px; }
+  .pill {
+    background: var(--cream-card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .card {
+    background: var(--cream-card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 26px;
+    margin: 28px 0;
+  }
+  a { color: var(--navy-soft); }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">sshhh</div>
+    <h1>Push-to-talk dictation in your menu bar.</h1>
+    <p class="lede">Hold the Option key and speak. Release, and sshhh transcribes your words on your Mac and pastes them into whatever app you are using - editor, browser, chat, mail, or terminal. No audio leaves your device.</p>
+
+    <div class="pills">
+      <span class="pill">Menu-bar only</span>
+      <span class="pill">On-device transcription</span>
+      <span class="pill">No account, no cloud</span>
+      <span class="pill">macOS 14+ &middot; Apple Silicon</span>
+    </div>
+
+    <h2>How it works</h2>
+    <ol>
+      <li><strong>Grant permissions</strong> when prompted on first launch - Microphone to record speech, and Accessibility to paste transcribed text into other apps.</li>
+      <li><strong>Hold Option and speak.</strong> A small floating widget shows when sshhh is recording.</li>
+      <li><strong>Release Option.</strong> sshhh transcribes the audio on your Mac and pastes the text into the active app.</li>
+      <li><strong>Add custom vocabulary</strong> in the Dictionary for names, jargon, and technical terms. Entries can also expand a short spoken form into a longer phrase.</li>
+    </ol>
+
+    <h2>Support</h2>
+    <div class="card">
+      <p>Questions, bugs, or feature requests? Get in touch:</p>
+      <p style="margin-bottom:0;"><strong>Email:</strong> <a href="mailto:nitin.sngwn@gmail.com">nitin.sngwn@gmail.com</a></p>
+    </div>
+    <p>Common tips: if transcribed text is not inserted, check that sshhh is enabled under System Settings &rsaquo; Privacy &amp; Security &rsaquo; Accessibility. If recording does not start, check Microphone access under Privacy &amp; Security &rsaquo; Microphone. sshhh requires macOS 14 (Sonoma) or later on an Apple Silicon Mac.</p>
+
+    <h2>Privacy</h2>
+    <p>sshhh transcribes audio locally on your Mac and does not upload, collect, sell, or track your audio or transcripts. Read the full <a href="sshhh-privacy.html">privacy policy</a>.</p>
+
+    <footer>
+      &copy; 2026 sshhh &middot; <a href="sshhh-privacy.html">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
